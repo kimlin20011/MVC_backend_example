@@ -71,8 +71,8 @@ module.exports = class Member {
                 const token = jwt.sign({
                     algorithm: 'HS256',
                     exp: Math.floor(Date.now() / 1000) + (60 * 60), // token一個小時後過期。
-                    data: rows[0].id
-                },toString(config.secret));
+                    data: rows[0].id  //在内容中放置id opinion
+                },toString(config.secret));  //config.secret部分需要stringfy才能使用
                 res.setHeader('token', token);
                 res.json({
                     result: {
