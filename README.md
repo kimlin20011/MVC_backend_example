@@ -1,5 +1,7 @@
 # MVC_backend_example
 MVC_backend_example
+------------------
+目前會員系統部分完成
 --------------
 npm套件
 
