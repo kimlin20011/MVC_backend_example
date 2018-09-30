@@ -1,13 +1,13 @@
-const toRegister = require('../models/register_model');
-const Check = require('../service/member_check');
-const encryption = require('../models/encryption');
-const loginAction = require('../models/login_model');
 const jwt = require('jsonwebtoken');
-const config = require('../config/development_config');
-const verify = require('../models/verification_model');
-const updateAction = require('../models/update_model');
 const formidable = require('formidable');
 const fs = require('fs');
+const config = require('../../config/development_config');
+const toRegister = require('../../models/member/register_model');
+const Check = require('../../service/member_check');
+const encryption = require('../../models/member/encryption');
+const loginAction = require('../../models/member/login_model');
+const verify = require('../../models/member/verification_model');
+const updateAction = require('../../models/member/update_model');
 
 check = new Check();
 console.log(`from mc ${config.serect}`);

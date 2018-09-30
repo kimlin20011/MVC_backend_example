@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const MemberModifyMethod = require('../controllers/modify_controller');
+const MemberModifyMethod = require('../controllers/member/modify_controller');
 
 /* GET home page. */
 memberModifyMethod = new MemberModifyMethod();
