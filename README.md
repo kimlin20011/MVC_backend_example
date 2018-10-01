@@ -18,6 +18,13 @@ npm install mysql
 dotenv：可用來隱藏些敏感性資料。
 npm install dotenv
 
+-------
+Http Verb 對應crud
+/
+POST = 新增
+GET = 讀取
+PUT = 更新
+DELETE = 刪除
 
 
 ----
