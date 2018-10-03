@@ -17,10 +17,11 @@ router.get('/order/member', orderGetMethod.getOneOrder);
 // 訂整筆訂單
 router.post('/order', orderModifyMethod.postOrderAllProduct);
 
-// 訂整筆訂單
-router.post('/order', orderModifyMethod.postOrderAllProduct);
-
 // 更改單筆訂單資料
 router.put('/order', orderModifyMethod.updateOrderProduct);
+
+router.delete('/order', orderModifyMethod.deleteOrderProduct);
+
+router.post('/order/addoneproduct', orderModifyMethod.postOrderOneProduct);
 
 module.exports = router;
