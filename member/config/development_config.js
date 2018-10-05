@@ -9,4 +9,8 @@ module.exports ={
       database: process.env.DATABASE
     },
     serect: process.env.MY_SECRET,
+    senderMail: {
+      user: process.env.SEND_MAIL_USER,
+      password: process.env.SEND_MAIL_PASSWORD
+    }
 }

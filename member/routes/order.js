@@ -24,4 +24,7 @@ router.delete('/order', orderModifyMethod.deleteOrderProduct);
 
 router.post('/order/addoneproduct', orderModifyMethod.postOrderOneProduct);
 
+// 訂單已完成
+router.put('/order/complete', orderModifyMethod.putProductComplete);
+
 module.exports = router;
